@@ -60,7 +60,7 @@
                                         <span>MOVIL</span>
                                     </th>
                                     <td>
-                                        <span t-field="oc.partner_mobile"/>
+                                        <span t-field="doc.partner_mobile"/>
                                     </td>
                                 </tr>
                                 <tr>
