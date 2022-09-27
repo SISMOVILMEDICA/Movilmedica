@@ -621,7 +621,7 @@
                                 </tr>
                                 <tr>
                                     <td rowspan="3">
-                                        <span t-field="doc.history_id.plan_m,anejo"/>
+                                        <span t-field="doc.history_id.plan_manejo"/>
                                     </td>
                                     <td style="height: 40px;">
                                         <span t-field="doc.history_id.medications_applied_in_consultation"/>
