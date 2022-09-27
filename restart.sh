@@ -1,3 +1,3 @@
 docker network prune -f
-docker-compose -f down --remove-orphans
-docker-compose -f up -d
+docker compose down --remove-orphans
+docker compose up -d
