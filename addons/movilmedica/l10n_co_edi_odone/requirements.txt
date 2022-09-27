@@ -1,7 +1,0 @@
-unidecode
-jinja2
-xmlsig
-xades
-OpenSSL
-io
-qrcode
