@@ -702,7 +702,7 @@
                                     <br/>
                                     <div style="text-align: center;">______________________</div>
                                     <div style="text-align: center;">Firmado por:<span t-field="doc.user_id.name"/></div>
-                                    <div>C.C.</div>
+                                    <div>C.C.<span t-field="doc.user_id.employee_id.identification_id"/></div>
                                 </div>
                                 <div style="height: 38px; width: 32%; float: left; margin-right: 10px; font-size: x-small;">
                                     <br/>
