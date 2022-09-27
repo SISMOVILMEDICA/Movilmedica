@@ -1,0 +1,48 @@
+version: '3.3'
+services:
+  web:
+    image: odoo:14.0
+    container_name: movilmedica
+    hostname: movilmedica
+    restart: always
+    ports:
+      - 8069:8069
+    depends_on:
+      - db
+    volumes:
+      - web-data:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./addons:/mnt/extra-addons
+      - ./tmp:/tmp
+    environment:
+      - VIRTUAL_HOST=movilmedica.com.co
+      - VIRTUAL_PORT=8069
+      - LETSENCRYPT_HOST=movilmedica.com.co
+      - LETSENCRYPT_EMAIL=moisalejandro@gmail.com
+    networks:
+      - nginx-proxy
+      - internal
+  db:
+    image: postgres:14.2
+    container_name: movilmedica_db
+    hostname: movilmedica_db
+    restart: always
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - internal
+
+volumes:
+  web-data:
+  db-data:
+
+networks:
+  nginx-proxy:
+    name: nginx-proxy
+  internal:
+    external: false
