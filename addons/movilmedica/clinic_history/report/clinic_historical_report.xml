@@ -195,10 +195,10 @@
                             </table>
                             <br/>
                             <div style="width: 100%; display: flex; justify-content: space-between; background: white;">
-                                <div style="width: 45%; float: left; margin-right: 10px;">
+                                <div style="width: 45%; float: left; margin-right: 10px; background: white;">
                                     <span>B. MOTIVO DE LA CONSULTA</span>
                                 </div>
-                                <div style="width: 45%; float: left; margin-right: 10px;">
+                                <div style="width: 45%; float: left; margin-right: 10px; background: white;">
                                     <span>B. ENFERMEDAD ACTUAL</span>
                                 </div>
                             </div>
@@ -375,16 +375,16 @@
                                 <span>D. REVISION POR SISTEMAS</span>
                             </div>
                             <div style="height: 110px; background: #d8d8d8;">
-                                <span>Aparato digestivo:<span t-field="doc.history_id.revision_digestivo"/></span>
-                                <span>Aparato respiratorio:<span t-field="doc.history_id.revision_respiratorio"/></span>
+                                <span>Aparato digestivo:<span t-field="doc.history_id.revision_digestivo"/></span><br/>
+                                <span>Aparato respiratorio:<span t-field="doc.history_id.revision_respiratorio"/></span><br/>
                                 <span>Aparato cardiovascular:<span
-                                        t-field="doc.history_id.revision_cardiovascular"/></span>
+                                        t-field="doc.history_id.revision_cardiovascular"/></span><br/>
                                 <span>Aparato genitourinario:<span
-                                        t-field="doc.history_id.revision_genitourinario"/></span>
-                                <span>Aparato tegumentario:<span t-field="doc.history_id.revision_tegumentario"/></span>
-                                <span>Sistema endocrino:<span t-field="doc.history_id.revision_endocrino"/></span>
+                                        t-field="doc.history_id.revision_genitourinario"/></span><br/>
+                                <span>Aparato tegumentario:<span t-field="doc.history_id.revision_tegumentario"/></span><br/>
+                                <span>Sistema endocrino:<span t-field="doc.history_id.revision_endocrino"/></span><br/>
                                 <span>Sistema hematopoyetico:<span
-                                        t-field="doc.history_id.revision_hematopoyetico"/></span>
+                                        t-field="doc.history_id.revision_hematopoyetico"/></span><br/>
                                 <span>Sistema nervioso:<span t-field="doc.history_id.revision_nervioso"/></span>
                             </div>
                             <br/>
