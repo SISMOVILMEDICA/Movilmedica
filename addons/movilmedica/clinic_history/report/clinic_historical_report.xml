@@ -276,8 +276,7 @@
                                                         t-field="doc.history_id.antecedentes_obstetrica_e"/></td>
                                                 <td style="width: 12.5%">M:<span
                                                         t-field="doc.history_id.antecedentes_obstetrica_f"/></td>
-                                                <td style="width: 25%">N/A:<span
-                                                        t-field="doc.history_id.antecedentes_obstetrica_g"/></td>
+                                                <td style="width: 25%">N/A:</td>
                                             </tr>
                                             <tr>
                                                 <td style="text-align: left;" colspan="4"><span>METODO DE
