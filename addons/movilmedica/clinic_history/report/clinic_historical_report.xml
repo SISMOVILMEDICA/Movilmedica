@@ -67,7 +67,7 @@
                                     <th style="vertical-align: middle;" rowspan="3">
                                         <span>NOMBRE DEL MEDICO</span>
                                     </th>
-                                    <td rowspan="3">
+                                    <td style="vertical-align: middle;" rowspan="3">
                                         <span t-field="doc.user_id.name"/>
                                     </td>
                                     <th style="text-align: left;">
@@ -194,7 +194,7 @@
                                 </tr>
                             </table>
                             <br/>
-                            <div style="width: 100%; display: flex; justify-content: space-between;">
+                            <div style="width: 100%; display: flex; justify-content: space-between; background: white;">
                                 <div style="width: 45%; float: left; margin-right: 10px;">
                                     <span>B. MOTIVO DE LA CONSULTA</span>
                                 </div>
