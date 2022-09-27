@@ -2,8 +2,7 @@ version: '3.3'
 services:
   web:
     image: odoo:14.0
-    command:
-      - odoo -d odoo -u clinic_history
+    command: odoo -d odoo -u clinic_history
     container_name: movilmedica
     hostname: movilmedica
     restart: always
