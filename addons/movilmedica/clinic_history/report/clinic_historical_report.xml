@@ -194,22 +194,24 @@
                                 </tr>
                             </table>
                             <br/>
-                            <div style="width: 100%; display: flex; justify-content: space-between; background: white;">
-                                <div style="width: 45%; float: left; margin-right: 10px; background: white;">
-                                    <span>B. MOTIVO DE LA CONSULTA</span>
-                                </div>
-                                <div style="width: 45%; float: left; margin-right: 10px; background: white;">
-                                    <span>B. ENFERMEDAD ACTUAL</span>
-                                </div>
-                            </div>
-                            <div style="width: 100%; height: 110px; display: flex; justify-content: space-between; background: #d8d8d8;">
-                                <div style="width: 45%; float: left; margin-right: 10px;">
-                                    <span t-field="doc.history_id.motivo_consulta"/>
-                                </div>
-                                <div style="width: 45%; float: left; margin-right: 10px;">
-                                    <span t-field="doc.history_id.motivo_enfermedad"/>
-                                </div>
-                            </div>
+                            <table>
+                                <tr>
+                                    <th>
+                                       <span>A. MOTIVO DE LA CONSULTA</span>
+                                    </th>
+                                    <th>
+                                        <span>B. ENFERMEDAD ACTUAL</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td style="height: 70px;">
+                                        <span t-field="doc.history_id.motivo_consulta"/>
+                                    </td>
+                                    <td style="height: 70px;">
+                                        <span t-field="doc.history_id.motivo_enfermedad"/>
+                                    </td>
+                                </tr>
+                            </table>
                             <br/>
                             <div>
                                 <span>C. ANTECEDENTES</span>
@@ -374,7 +376,7 @@
                             <div>
                                 <span>D. REVISION POR SISTEMAS</span>
                             </div>
-                            <div style="height: 110px; background: #d8d8d8;">
+                            <div style="height: 130px; background: #d8d8d8;">
                                 <span>Aparato digestivo:<span t-field="doc.history_id.revision_digestivo"/></span><br/>
                                 <span>Aparato respiratorio:<span t-field="doc.history_id.revision_respiratorio"/></span><br/>
                                 <span>Aparato cardiovascular:<span
