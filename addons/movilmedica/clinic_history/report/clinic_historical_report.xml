@@ -196,10 +196,10 @@
                             <br/>
                             <table>
                                 <tr>
-                                    <th>
+                                    <th style="background: white">
                                        <span>A. MOTIVO DE LA CONSULTA</span>
                                     </th>
-                                    <th>
+                                    <th style="background: white">
                                         <span>B. ENFERMEDAD ACTUAL</span>
                                     </th>
                                 </tr>
@@ -447,84 +447,77 @@
                                     <td style="width: 30%; background: #df8400;">
                                         <span>PIEL Y FANERAS</span>
                                     </td>
-                                    <td rowspan="2"></td>
+                                    <td rowspan="2"><span t-field="doc.history_id.examen_piel_char"/></td>
                                 </tr>
                                 <tr>
                                     <td style="width: 30%;">
-                                        <span t-field="doc.history_id.examen_piel_selec"/><span
-                                            t-field="doc.history_id.examen_piel_char"/>
+                                        <span t-field="doc.history_id.examen_piel_selec"/>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background: #df8400;">
                                         <span>CABEZA Y ORGANOS DE LOS SENTIDOS</span>
                                     </td>
-                                    <td rowspan="2"></td>
+                                    <td rowspan="2"><span t-field="doc.history_id.examen_cabeza_char"/></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span t-field="doc.history_id.examen_cabeza_selec"/><span
-                                            t-field="doc.history_id.examen_cabeza_char"/>
+                                        <span t-field="doc.history_id.examen_cabeza_selec"/>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background: #df8400;">
                                         <span>CARDIO RESPIRATORIO</span>
                                     </td>
-                                    <td rowspan="2"></td>
+                                    <td rowspan="2"><span t-field="doc.history_id.examen_cardio_char"/></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span t-field="doc.history_id.examen_cardio_selec"/><span
-                                            t-field="doc.history_id.examen_cardio_char"/>
+                                        <span t-field="doc.history_id.examen_cardio_selec"/>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background: #df8400;">
                                         <span>ABDOMEN</span>
                                     </td>
-                                    <td rowspan="2"></td>
+                                    <td rowspan="2"><span t-field="doc.history_id.examen_abdomen_char"/></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span t-field="doc.history_id.examen_abdomen_selec"/><span
-                                            t-field="doc.history_id.examen_abdomen_char"/>
+                                        <span t-field="doc.history_id.examen_abdomen_selec"/>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background: #df8400;">
                                         <span>UROGENITAL</span>
                                     </td>
-                                    <td rowspan="2"></td>
+                                    <td rowspan="2"><span t-field="doc.history_id.examen_urogenital_char"/></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span t-field="doc.history_id.examen_urogenital_selec"/><span
-                                            t-field="doc.history_id.examen_urogenital_char"/>
+                                        <span t-field="doc.history_id.examen_urogenital_selec"/>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background: #df8400;">
                                         <span>EXTREMIDADES Y OSTEOARTICULAR</span>
                                     </td>
-                                    <td rowspan="2"></td>
+                                    <td rowspan="2"><span t-field="doc.history_id.examen_extremidades_char"/></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span t-field="doc.history_id.examen_extremidades_selec"/><span
-                                            t-field="doc.history_id.examen_extremidades_char"/>
+                                        <span t-field="doc.history_id.examen_extremidades_selec"/>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="background: #df8400;">
                                         <span>NEUROLOGICO</span>
                                     </td>
-                                    <td rowspan="2"></td>
+                                    <td rowspan="2"><span t-field="doc.history_id.examen_neurologico_char"/></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span t-field="doc.history_id.examen_neurologico_selec"/><span
-                                            t-field="doc.history_id.examen_neurologico_char"/>
+                                        <span t-field="doc.history_id.examen_neurologico_selec"/>
                                     </td>
                                 </tr>
                             </table>
